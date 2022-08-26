@@ -1,0 +1,364 @@
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: #22212C;
+    color: #837E9F;
+    flex-direction: column;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    background-color: #302F3D;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 348px;
+    height: 292px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-picture {
+    border: 2px solid #00FF00;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.profile h2, h3 {
+    line-height: 0;
+}
+
+.profile h2 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.profile h3 {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px 30px;
+    background-color: #302F3D;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 348px;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.infos p {
+    display: flex;
+    font-weight: 400;
+    font-size: 13px;
+    align-items: center;
+    gap: .8rem;
+    margin: 10px;
+}
+
+.infos a {
+    display: flex;
+    text-decoration: none;
+    color: #837E9F;
+    font-weight: 400;
+    font-size: 13px;
+    align-items: center;
+    gap: .8rem;
+    margin: 10px;
+}
+
+.techs {
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    height: auto;
+    background-color: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.techs h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.techs-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 20px 30px;
+    justify-content: space-between;
+}
+
+.techs p {
+    display: flex;
+    background-color: #CB92B1;
+    width: 86px;
+    height: 24px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+.experiences {
+    flex-direction: column;
+    width: 348px;
+    height: auto;
+    background-color: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.experiences h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.experiences ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 4px 40px 20px 60px;
+}
+
+.experiences li {
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.experiences li h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.experiences li p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.education {
+    flex-direction: column;
+    width: 348px;
+    height: auto;
+    background-color: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.education h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.education ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 4px 40px 20px 60px;
+}
+
+.education li {
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.education li h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.education li p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.projects {
+    display: flex;
+    width: 952px;
+    height: 86px;
+    background-color: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    margin: 20px;
+}
+
+.projects h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.projects a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #837E9F;
+}
+
+.card-container {
+    display: flex;
+    gap: 1.8rem;
+    margin: 20px;
+}
+
+.card1, .card2 {
+    width: 461px;
+    height: 200px;
+    background-color: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #837E9F;
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    align-items: center;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.repo-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.posts {
+    display: flex;
+    width: 952px;
+    height: 86px;
+    background-color: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    margin: 20px;
+}
+
+.posts h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 952px;
+    height: 201px;
+    background-color: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px 30px 30px 30px;
+    text-decoration: none;
+    color: #837E9F;
+}
+
+.post img {
+    height: 128px;
+    border-radius: 100%;
+}
+
+.post-content h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.post-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.post-content h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.hashtag {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    padding: .8rem;
+    align-items: center;
+    justify-content: center;
+}
