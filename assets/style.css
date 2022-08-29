@@ -9,6 +9,7 @@ body {
     background-color: #22212C;
     color: #837E9F;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #main-content {
@@ -23,8 +24,8 @@ body {
     background-color: #302F3D;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 348px;
-    height: 292px;
+    width: 21.75rem;
+    height: 18.25rem;
     justify-content: center;
     align-items: center;
     margin: 20px;
@@ -32,8 +33,8 @@ body {
 
 .profile-picture {
     border: 2px solid #00FF00;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
 }
 
@@ -60,7 +61,7 @@ body {
     background-color: #302F3D;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 348px;
+    width: 21.75rem;
     height: auto;
     justify-content: center;
     align-items: flex-start;
@@ -90,7 +91,7 @@ body {
 .techs {
     display: flex;
     flex-direction: column;
-    width: 348px;
+    width: 21.75rem;
     height: auto;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -116,8 +117,8 @@ body {
 .techs p {
     display: flex;
     background-color: #CB92B1;
-    width: 86px;
-    height: 24px;
+    width: 5.4rem;
+    height: 1.5rem;
     border-radius: 30px;
     align-items: center;
     justify-content: center;
@@ -130,7 +131,7 @@ body {
 
 .experiences {
     flex-direction: column;
-    width: 348px;
+    width: 21.75rem;
     height: auto;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -171,7 +172,7 @@ body {
 
 .education {
     flex-direction: column;
-    width: 348px;
+    width: 21.75rem;
     height: auto;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -212,8 +213,8 @@ body {
 
 .projects {
     display: flex;
-    width: 952px;
-    height: 86px;
+    width: 59.5rem;
+    height: 5.4rem;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -244,8 +245,8 @@ body {
 }
 
 .card1, .card2 {
-    width: 461px;
-    height: 200px;
+    width: 28.8rem;
+    height: 12.5rem;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -291,8 +292,8 @@ body {
 
 .posts {
     display: flex;
-    width: 952px;
-    height: 86px;
+    width: 59.5rem;
+    height: 5.4rem;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -311,8 +312,8 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 952px;
-    height: 201px;
+    width: 59.5rem;
+    height: 12.5rem;
     background-color: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -323,7 +324,7 @@ body {
 }
 
 .post img {
-    height: 128px;
+    height: 8rem;
     border-radius: 100%;
 }
 
