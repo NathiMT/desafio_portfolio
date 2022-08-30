@@ -18,17 +18,24 @@ body {
     justify-content: space-evenly;
 }
 
-.profile {
+.profile, .infos, .techs, .experiences, .education {
     display: flex;
     flex-direction: column;
+    width: 21.75rem;
     background-color: #302F3D;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 21.75rem;
+    margin: 20px;
+}
+
+.infos, .techs, .experiences, .education {
+    height: auto;
+}
+
+.profile {
     height: 18.25rem;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 
 .profile-picture {
@@ -55,20 +62,12 @@ body {
 }
 
 .infos {
-    display: flex;
-    flex-direction: column;
     padding: 30px 30px 30px 30px;
-    background-color: #302F3D;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 21.75rem;
-    height: auto;
     justify-content: center;
     align-items: flex-start;
-    margin: 20px;
 }
 
-.infos p {
+.infos p, .infos a {
     display: flex;
     font-weight: 400;
     font-size: 13px;
@@ -78,25 +77,8 @@ body {
 }
 
 .infos a {
-    display: flex;
     text-decoration: none;
     color: #837E9F;
-    font-weight: 400;
-    font-size: 13px;
-    align-items: center;
-    gap: .8rem;
-    margin: 10px;
-}
-
-.techs {
-    display: flex;
-    flex-direction: column;
-    width: 21.75rem;
-    height: auto;
-    background-color: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    margin: 20px;
 }
 
 .techs h2 {
@@ -129,17 +111,7 @@ body {
     text-transform: uppercase;
 }
 
-.experiences {
-    flex-direction: column;
-    width: 21.75rem;
-    height: auto;
-    background-color: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    margin: 20px;
-}
-
-.experiences h2 {
+.experiences h2, .education h2 {
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
@@ -147,71 +119,30 @@ body {
     padding-top: 20px;
 }
 
-.experiences ul {
+.experiences ul, .education ul {
     flex-direction: column;
     margin: 0;
     padding: 4px 40px 20px 60px;
 }
 
-.experiences li {
+.experiences li, .education li {
     flex-direction: column;
     padding-bottom: 5px;
 }
 
-.experiences li h3 {
+.experiences li h3, .education li h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
 }
 
-.experiences li p {
+.experiences li p, .education li p {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
 }
 
-.education {
-    flex-direction: column;
-    width: 21.75rem;
-    height: auto;
-    background-color: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    margin: 20px;
-}
-
-.education h2 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.education ul {
-    flex-direction: column;
-    margin: 0;
-    padding: 4px 40px 20px 60px;
-}
-
-.education li {
-    flex-direction: column;
-    padding-bottom: 5px;
-}
-
-.education li h3 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.education li p {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-}
-
-.projects {
+.projects, .posts {
     display: flex;
     width: 59.5rem;
     height: 5.4rem;
@@ -224,7 +155,7 @@ body {
     margin: 20px;
 }
 
-.projects h2 {
+.projects h2, .posts h2 {
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
@@ -290,24 +221,6 @@ body {
     font-weight: 400;
 }
 
-.posts {
-    display: flex;
-    width: 59.5rem;
-    height: 5.4rem;
-    background-color: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    align-items: center;
-    padding: 30px 30px 30px 30px;
-    margin: 20px;
-}
-
-.posts h2 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-}
-
 .post {
     display: flex;
     align-items: center;
@@ -362,4 +275,57 @@ footer {
     padding: .8rem;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    aside, main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile, .infos, .techs, .experiences, .education {
+        width: 90%;
+    }
+
+    .projects, .card-container, .posts, .post, .card1, .card2 {
+        max-width: 90%;
+    }
+
+    .infos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .post img {
+        display: flex;
+        height: 50%;
+        align-items: flex-start;
+    }
+
+    .post-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
