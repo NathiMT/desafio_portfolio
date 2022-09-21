@@ -7,7 +7,7 @@
 
 <p align="center">
 
-  <a href="https://github.com/NathiMT/Social-Tree/commits/main">
+  <a href="https://github.com/NathiMT/desafio_portfolio/commits/main">
       <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/NathiMT/desafio_portfolio/main">
   </a>
 
